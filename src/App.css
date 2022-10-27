@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #e7e6e6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  width: 90%;
+  margin: 30px auto;
+  max-width: 56rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.header {
+  color: red;
+  margin-bottom: 30px;
+}
+
+.table {
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  max-width: 56rem;
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  border-radius: 0.5rem;
+  white-space: nowrap;
+  width: 100%;
+  border-collapse: collapse;
+  text-indent: 0;
+  border-color: inherit;
+}
+
+.table-head {
+  background-color: black;
+}
+
+.table-head-row {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.table-head-header {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.table-body-data {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  text-align: center;
+}
+
+.data-name {
+  color: blue;
+  cursor: pointer;
+}
+
+.posts-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.post-container {
+  border: 1px solid black;
+  width: 250px;
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+.post-title {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.post-text {
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
